@@ -1,2 +1,3 @@
-import time
-aaaa
+import os
+
+print(os.times())
