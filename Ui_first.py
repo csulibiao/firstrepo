@@ -18,6 +18,7 @@ class Ui_MainWindow(object):
         self.listView.setGeometry(QtCore.QRect(80, 50, 591, 331))
         self.listView.setObjectName("listView")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setEnabled(True)
         self.pushButton.setGeometry(QtCore.QRect(190, 160, 261, 51))
         font = QtGui.QFont()
         font.setFamily("Arial")
@@ -42,6 +43,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.pushButton.setToolTip(_translate("MainWindow", "aaaaa"))
         self.pushButton.setText(_translate("MainWindow", "PushButton"))
         self.menuaaaa.setTitle(_translate("MainWindow", "aaaa"))
 
