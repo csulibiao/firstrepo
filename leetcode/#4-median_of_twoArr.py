@@ -19,7 +19,7 @@ class Solution:
             elif cut1 < x and nums2[cut2-1] > nums1[cut1]:
                 start = cut1 + 1
 
-            if max(max_left1,max_left2) <= min(min_right1,min_right2):
+            elif max(max_left1,max_left2) <= min(min_right1,min_right2):
 
                 if (x+y)%2==0:
                     return (max(max_left1,max_left2)+ min(min_right1,min_right2))/2
@@ -33,4 +33,4 @@ class Solution:
 
 
 sol = Solution()
-print(sol.findMedianSortedArrays([1,2],[3,4]))
+print(sol.findMedianSortedArrays([1],[3,4]))
