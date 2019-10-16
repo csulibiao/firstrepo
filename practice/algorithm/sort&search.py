@@ -122,7 +122,7 @@ def HeapSort(lst):
     #建立大顶堆
     root=n//2-1    #最后一个非叶节点（完全二叉树中）
     while(root>=0):
-        heapadjust(ls,root,n-1)
+        heapadjust(lst,root,n-1)
         root-=1
     #掐掉堆顶后调整堆
     i=n-1
