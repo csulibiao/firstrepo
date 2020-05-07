@@ -79,6 +79,7 @@ def InsertSort(lst):
             j=j-1
         lst[j]=target            #把target插到空位
     return lst
+print("is:",InsertSort(nums))
 
 ####--------------------------------------####
 def ShellSort(lst):
@@ -100,6 +101,7 @@ def ShellSort(lst):
         shellinsert(lst,d)
         d=d//2
     return lst
+print("ss:",ShellSort(nums))
 
 ####--------------------------------------####
 def HeapSort(lst):
@@ -131,6 +133,7 @@ def HeapSort(lst):
         heapadjust(lst,0,i-1)    #调整剩余数组成的堆
         i-=1
     return lst
+print("hs:",HeapSort(nums))
 
 ####--------------------------------------####
 def MergeSort(lst):
@@ -168,3 +171,6 @@ def MergeSort(lst):
         return lst
     mSort(lst,0,n-1)
     return lst
+print("ms:",MergeSort(nums))
+
+####--------------------------------------####
