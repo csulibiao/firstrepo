@@ -42,6 +42,7 @@ def findTopK3(bigdata: List[int], k: int) -> Any:
     return tmp[-1]
 
 k = 6
+
 print(f'Pq method, the {k}th largest number is:', findTopK1(bigdata, 6))
 print(f'Hp method, the {k}th largest number is:', findTopK2(bigdata, 6))
 print(f'Bf method, the {k}th largest number is:', findTopK3(bigdata, 6))
